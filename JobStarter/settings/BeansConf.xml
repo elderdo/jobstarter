@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+    <bean id="ShowHelp" class="com.boeing.jobstarter.action.ShowHelp" />
+    <bean id="MyAppContext" class="com.boeing.jobstarter.MyAppContext"/>
+    <bean id="Log" class="com.boeing.jobstarter.utils.Log"/>
+    <bean id ="FileWriterUtil" class="com.boeing.jobstarter.utils.FileWriterUtil">
+        <property name="logger" ref="Log"/>
+    </bean>
+    
+    <bean id="MSSQLConnection" class="com.boeing.jobstarter.connection.MSSQLConnection" scope="prototype">
+        <property name="logger" ref="Log"/>
+    </bean> 
+    <bean id="DB2Connection" class="com.boeing.jobstarter.connection.DB2Connection" scope="prototype">
+        <property name="logger" ref="Log"/>
+    </bean> 
+    <bean id="OrclConnection" class="com.boeing.jobstarter.connection.OrclConnection" scope="prototype">
+        <property name="logger" ref="Log"/>
+    </bean>
+    <bean id="TDConnection" class="com.boeing.jobstarter.connection.TDConnection" scope="prototype">
+        <property name="logger" ref="Log"/>
+    </bean>
+    <bean id="CallConnectionConfig" class="com.boeing.jobstarter.services.CallConnectionConfig">
+        <property name="myAppContext" ref="MyAppContext"/>
+    </bean>
+    <bean id="CallDDL" class="com.boeing.jobstarter.services.CallDDL">
+        <property name="myAppContext" ref="MyAppContext"/>
+    </bean>
+    <bean id="CallerImpl" class="com.boeing.jobstarter.action.implement.CallerImpl" >
+        <property name="myAppContext" ref="MyAppContext"/> 
+        <property name="logger" ref="Log"/>
+    </bean>
+</beans>

@@ -1,0 +1,7 @@
+SELECT [OrganizationStructureId]
+      ,[TaldUserID]
+      ,[ReportsToBemsid]
+      ,[JobTitleId]
+      ,[AssignedToBudget]
+      ,[OnLoanFlag]
+  FROM [TEDArLog].[dbo].[OrganizationStructure]

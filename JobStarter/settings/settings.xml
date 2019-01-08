@@ -1,0 +1,151 @@
+<!DOCTYPE xml>
+<settings>
+    <app-conf>
+        <bulk-size>50000</bulk-size>
+        <connection-timeout>900000</connection-timeout>
+        <directories>
+            <output-dir>output</output-dir>
+            <log-dir>logs</log-dir>
+            <archive-dir>archive</archive-dir>
+            <input-dir>input</input-dir>
+            <work-dir>work</work-dir>
+            <lib-dir>library</lib-dir>
+            <script-dir>script</script-dir>
+            <ctl-dir>ctls</ctl-dir>
+            <path id="output" value="[app_directory]|output|" />
+            <path id="logs" value="[app_directory]|logs|" />
+            <path id="archive" value="[app_directory]|archives|" />
+            <path id="input" value="[app_directory]|input|" />
+            <path id="work" value="[app_directory]|work|" />
+            <path id="library" value="[app_directory]|jars|" />
+            <path id="script" value="[app_directory]|script|" />
+            <path id="ctls" value="[app_directory]|ctls|" />
+        </directories>
+        <mail>
+            <mail-param>
+                <smtp-server>relay.boeing.com</smtp-server>
+                <smtp-port>25</smtp-port>
+                <sender-mail>sdsdw@svappl15.stl.mo.boeing.com</sender-mail>
+                <sender-name>NoReply-JS</sender-name>
+                <auth-type>none</auth-type><!-- none|ssl|tls -->
+                <user />
+                <password />
+            </mail-param>
+            <mail-list>
+                <address>walter.a.desolarodriguez@boeing.com</address>
+                <address>robert.j.menk@boeing.com</address>
+            </mail-list>
+        </mail>
+    </app-conf>
+    <db-types>
+        <db-type class="OrclConnection" driver="oracle.jdbc.driver.OracleDriver" id="ORACLE" />
+        <db-type class="DB2Connection" driver="com.ibm.db2.jdbc.app.DB2Driver" id="DB2" />
+        <db-type class="MSSQLConnection" driver="com.microsoft.sqlserver.jdbc.SQLServerDriver" id="MSSQL" />
+        <db-type class="TDConnection" driver="com.teradata.jdbc.TeraDriver" id="TERADATA" />
+    </db-types>
+    <connection-string>
+        <connection default="N" id="SDSDWC17">
+            <user>SDSDWC17</user>
+            <password>G0b2W1TwnQugIHxYoRSrCg==</password>
+            <database-name>DSDS01</database-name>
+            <database-type>ORACLE</database-type>
+            <server-host />
+            <server-port />
+            <use-ldap>Y</use-ldap>
+        </connection>
+        <connection default="N" id="NWCS1011A">
+            <user>TED_737ToolOpsMtrc</user>
+            <password>nU6VHXw640DbJOGxRw7Zag==</password>
+            <database-name>TEDTLC</database-name>
+            <database-type>MSSQL</database-type>
+            <server-host>SQL-NWCS-101-1A\OLTPPRD01</server-host>
+            <server-port />
+            <use-ldap>N</use-ldap>
+        </connection>
+        <connection default="N" id="SDSDWC17IC">
+            <user>SDSDWC17IC</user>
+            <password>6BFW5UzE6nHu1fE1aLAXIg==</password>
+            <database-name>DSDS01</database-name>
+            <database-type>ORACLE</database-type>
+            <server-host />
+            <server-port />
+            <use-ldap>Y</use-ldap>
+        </connection>
+        <connection default="N" id="DW737IC">
+            <user>DW737IC</user>
+            <password>y+quRmpMhBzuB3011lbP0Q==</password>
+            <database-name>DSDS01</database-name>
+            <database-type>ORACLE</database-type>
+            <server-host />
+            <server-port />
+            <use-ldap>Y</use-ldap>
+        </connection>
+        <connection default="Y" id="SDSDWHOME">
+            <user>SDSDWHOME</user>
+            <password>jLg1IESuzUOm3xrCkQChZA==</password>
+            <database-name>DSDS01</database-name>
+            <database-type>ORACLE</database-type>
+            <server-host />
+            <server-port />
+            <use-ldap>Y</use-ldap>
+        </connection>
+        <connection default="N" id="NWCS271A">
+            <user>PSDW_IC</user>
+            <password>m/UxNQsTSTfHEyTs680KBA==</password>
+            <database-name>NWPACTIVE</database-name>
+            <database-type>MSSQL</database-type>
+            <server-host>SQL-NWCS-27-1A\DSSPRD01</server-host>
+            <server-port />
+            <use-ldap>N</use-ldap>
+        </connection>
+        <connection default="N" id="TERAPRD1">
+            <user>BCDWT492</user>
+            <password>V1jBf7ojQSq8hq2LQThL7w==</password>
+            <database-name />
+            <database-type>TERADATA</database-type>
+            <server-host>teraprd1.ca.boeing.com</server-host>
+            <server-port />
+            <use-ldap>N</use-ldap>
+        </connection>
+        <connection default="N" id="NWCS1091A">
+            <user>TIPSREAD</user>
+            <password>1RiXpfnmHic9A+7HZOPX1g==</password>
+            <database-name>TIPS</database-name>
+            <database-type>MSSQL</database-type>
+            <server-host>SQL-NWCS-109-1A\OLTPPRD01</server-host>
+            <server-port />
+            <use-ldap>N</use-ldap>
+        </connection>
+        <connection default="N" id="SDSDWSANDBOXIC">
+            <user>SDSDWSANDBOXIC</user>
+            <password>vtttxR9HndMXC+ONKVE7UQ==</password>
+            <database-name>dsds01</database-name>
+            <database-type>ORACLE</database-type>
+            <server-host />
+            <server-port />
+            <use-ldap>Y</use-ldap>
+        </connection>
+    </connection-string>
+    <ldap-server>
+        <server id="oidlbr.cs.boeing.com">
+            <ldap-port>3097</ldap-port>
+            <ldap-ssl-port>3121</ldap-ssl-port>
+            <dc>boeingdb</dc>
+        </server>
+        <server id="oidfosea1.cs.boeing.com">
+            <ldap-port>3097</ldap-port>
+            <ldap-ssl-port>3121</ldap-ssl-port>
+            <dc>boeingdb</dc>
+        </server>
+        <server id="oidfo1.stl.mo.boeing.com">
+            <ldap-port>3097</ldap-port>
+            <ldap-ssl-port>3121</ldap-ssl-port>
+            <dc>boeingdb</dc>
+        </server>
+        <server id="oidmdsa.cs.boeing.com">
+            <ldap-port>3097</ldap-port>
+            <ldap-ssl-port>3121</ldap-ssl-port>
+            <dc>boeingdb</dc>
+        </server>
+    </ldap-server>
+</settings>

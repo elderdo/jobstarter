@@ -1,0 +1,65 @@
+<!DOCTYPE xml>
+<action>
+    <commands>
+        <command id="-r" name="OBJECT" type="call" class="CallerImpl" value="next">
+            <command id="r" name="OBJECT" type="lib" class="NotImplemented" value="" jar="" />
+            <command id="s" name="OBJECT" type="lib" class="com.boeing.jobstarter.services.CallStoredProcedure"
+                value="next" jar="CallStoredProcedure.jar" />
+            <command id="f" name="OBJECT" type="lib" class="NotImplemented" value="next" jar="" />
+            <command id="l" name="OBJECT" type="lib" class="com.boeing.jobstarter.services.CallSqlLoader"
+                value="none" jar="CallSqlLoader.jar">
+                <require>JOBNAME</require>
+                <require>CONNECTION</require>
+            </command>
+            <command id="x">
+                <command id="t" name="OBJECT" type="lib" class="com.boeing.jobstarter.services.CallExtractTable"
+                    value="next" jar="CallExtractTable.jar">
+                    <require>JOBNAME</require>
+                    <require>CONNECTION</require>
+                    <require>SCHEMADEST</require>
+                </command>
+                <command id="w" name="OBJECT" type="lib" class="NotImplemented" value="next" jar="" />
+                <command id="q" name="OBJECT" type="lib" class="com.boeing.jobstarter.services.CallExtractSql"
+                    value="next" jar="CallExtractSql.jar">
+                    <require>JOBNAME</require>
+                    <require>CONNECTION</require>
+                    <require>SCHEMADEST</require>
+                </command>
+            </command>
+            <command id="c">
+                <command id="l" name="LIST" type="call" class="CallConnectionConfig" value="none" />
+                <command id="a" name="ADD" type="call" class="CallConnectionConfig" value="none" />
+                <command id="d" name="DELETE" type="call" class="CallConnectionConfig" value="next" />
+                <command id="m" name="MODIFY" type="call" class="CallConnectionConfig" value="next" />
+                <command id="t" name="TEST" type="call" class="CallConnectionConfig" value="next" />
+            </command>
+            <command id="d" name="OBJECT" type="call" class="CallDDL" value="next">
+                <require>CONNECTION</require>
+                <require>SCHEMADEST</require>
+            </command>
+        </command>
+        <command id="-h" name="OBJECT" type="call" class="ShowHelp" value="next" />
+    </commands>
+    <parameters>
+        <parameter id="--c" name="CONNECTION" value="next" />
+        <parameter id="--p" name="PARAMETER" value="next" />
+        <parameter id="--sd" name="SCHEMADEST" value="next" />
+        <parameter id="--NOHEADER" name="NOHEADER" value="none" />
+        <parameter id="--SKIP" name="SKIP" value="read"/>
+        <parameter id="--ZIP" name="ZIP" value="none" />
+        <parameter id="--ARCHIVE" name="ARCHIVE" value="none" />
+        <parameter id="--NODELETE" name="NODELETE" value="none" />
+        <parameter id="--COPY" name="COPY" value="read" />
+        <parameter id="--MOVE" name="MOVE" value="read" />
+        <parameter id="--REPORTBY" name="REPORTBY" value="read" /> <!-- MAIL,COPY,DATABASE -->
+        <parameter id="--REPORT" name="REPORT" value="read" /> <!-- SUCCESS|ERROR|BOTH -->
+        <parameter id="--JOBNAME" name="JOBNAME" value="read" />
+        <parameter id="--LOADLAST" name="LOADLAST" value="none" />
+        <parameter id="--USEHEADER" name="USEHEADER" value="none" />
+        <parameter id="--DATEFORMAT" name="DATEFORMAT" value="read" />
+        <parameter id="--REFRESH" name="REFRESH" value="read" />
+        <parameter id="--DELETEBY" name="DELETEBY" value="read" />
+        <parameter id="--ADDLOADDATE" name="ADDLOADDATE" value="read" />
+        <parameter id="--CTL" name="CTL" value="read" />
+    </parameters>
+</action>

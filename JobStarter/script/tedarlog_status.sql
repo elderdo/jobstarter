@@ -1,0 +1,5 @@
+SELECT [StatusId]
+      ,[StatusCode]
+      ,[StatusDescription]
+      ,[StatusGroupId]
+  FROM [TEDArLog].[dbo].[Status]

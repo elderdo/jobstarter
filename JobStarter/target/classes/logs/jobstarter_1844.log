@@ -1,0 +1,109 @@
+01/07/2019 01:47:52 - [INFO]: Process ID: 1844 Started
+01/07/2019 01:47:54 - [INFO]: Executing: CallExtractSql with following parameter(s): 
+CONNECTION = [NWCS1011A]
+ZIP = [true]
+MOVE = [C:\Users\nf945e\eclipse-workspace\projects\JobStarter\input]
+SCHEMADEST = [DW737IC]
+JOBNAME = [Extract from MS SQL Server Database TEDTLC/TEDARLOG]
+REPORTBY = [MAIL]
+REPORT = [FAIL]
+OBJECT = [tedtlc_mes_sfm_tool_order.sql,tedtlc_mes_sfm_toolorder_complete.sql,tedtlc_mes_sfm_operation_data.sql,tedtlc_mes_sfm_operationdata_complete.sql,tedtlc_mes_capp_operationdata_complete.sql,tedtlc_mes_capp_tool_order.sql,tedtlc_mes_capp_toolorder_complete.sql,tedtlc_mes_capp_toolorder_insignoff.sql,tedtlc_mes_capp_toolorder_insignoff_complete.sql,tedtlc_mes_capp_operation_data.sql,tedtlc_mes_employee.sql,tedarlog_request.sql,tedarlog_status.sql,tedarlog_ramarc_request.sql,tedarlog_type.sql,tedarlog_priority.sql,tedarlog_filter_assigned_to_name.sql,tedarlog_tald_user.sql,tedarlog_organization_structure.sql]
+
+01/07/2019 01:47:58 - [INFO]: Connecting to MSSQL Server Database [TEDTLC] using: NWCS1011A With : jdbc:sqlserver://SQL-NWCS-101-1A\OLTPPRD01
+01/07/2019 01:48:02 - [INFO]: Database connection established successfuly...
+01/07/2019 01:48:02 - [INFO]: Reading File: tedtlc_mes_sfm_tool_order.sql
+01/07/2019 01:48:03 - [INFO]: Executing query
+01/07/2019 01:48:04 - [INFO]: Fetching records
+01/07/2019 01:48:05 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:48:06 - [INFO]: File generated with: 1996 rows
+01/07/2019 01:48:06 - [INFO]: Reading File: tedtlc_mes_sfm_toolorder_complete.sql
+01/07/2019 01:48:07 - [INFO]: Executing query
+01/07/2019 01:48:11 - [INFO]: Fetching records
+01/07/2019 01:48:12 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:48:54 - [INFO]: File generated with: 64305 rows
+01/07/2019 01:48:56 - [INFO]: Reading File: tedtlc_mes_sfm_operation_data.sql
+01/07/2019 01:48:57 - [INFO]: Executing query
+01/07/2019 01:49:03 - [INFO]: Fetching records
+01/07/2019 01:49:04 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:49:43 - [INFO]: File generated with: 171960 rows
+01/07/2019 01:49:45 - [INFO]: Reading File: tedtlc_mes_sfm_operationdata_complete.sql
+01/07/2019 01:49:46 - [INFO]: Executing query
+01/07/2019 01:49:52 - [INFO]: Fetching records
+01/07/2019 01:49:52 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:52:16 - [INFO]: File generated with: 343613 rows
+01/07/2019 01:52:21 - [INFO]: Reading File: tedtlc_mes_capp_operationdata_complete.sql
+01/07/2019 01:52:22 - [INFO]: Executing query
+01/07/2019 01:52:22 - [INFO]: Fetching records
+01/07/2019 01:52:23 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:53:16 - [INFO]: File generated with: 357936 rows
+01/07/2019 01:53:18 - [INFO]: Reading File: tedtlc_mes_capp_tool_order.sql
+01/07/2019 01:53:19 - [INFO]: Executing query
+01/07/2019 01:53:19 - [INFO]: Fetching records
+01/07/2019 01:53:20 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:53:20 - [INFO]: File generated with: 416 rows
+01/07/2019 01:53:20 - [INFO]: Reading File: tedtlc_mes_capp_toolorder_complete.sql
+01/07/2019 01:53:21 - [INFO]: Executing query
+01/07/2019 01:53:21 - [INFO]: Fetching records
+01/07/2019 01:53:21 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:53:44 - [INFO]: File generated with: 68079 rows
+01/07/2019 01:53:45 - [INFO]: Reading File: tedtlc_mes_capp_toolorder_insignoff.sql
+01/07/2019 01:53:46 - [INFO]: Executing query
+01/07/2019 01:53:46 - [INFO]: Fetching records
+01/07/2019 01:53:46 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:53:48 - [INFO]: File generated with: 23056 rows
+01/07/2019 01:53:48 - [INFO]: Reading File: tedtlc_mes_capp_toolorder_insignoff_complete.sql
+01/07/2019 01:53:49 - [INFO]: Executing query
+01/07/2019 01:53:49 - [INFO]: Fetching records
+01/07/2019 01:53:50 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:54:32 - [INFO]: File generated with: 376744 rows
+01/07/2019 01:54:34 - [INFO]: Reading File: tedtlc_mes_capp_operation_data.sql
+01/07/2019 01:54:35 - [INFO]: Executing query
+01/07/2019 01:54:35 - [INFO]: Fetching records
+01/07/2019 01:54:36 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:54:39 - [INFO]: File generated with: 26365 rows
+01/07/2019 01:54:39 - [INFO]: Reading File: tedtlc_mes_employee.sql
+01/07/2019 01:54:40 - [INFO]: Executing query
+01/07/2019 01:54:40 - [INFO]: Fetching records
+01/07/2019 01:54:41 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:54:41 - [INFO]: File generated with: 7096 rows
+01/07/2019 01:54:41 - [INFO]: Reading File: tedarlog_request.sql
+01/07/2019 01:54:42 - [INFO]: Executing query
+01/07/2019 01:54:42 - [INFO]: Fetching records
+01/07/2019 01:54:43 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:54:43 - [INFO]: File generated with: 140 rows
+01/07/2019 01:54:43 - [INFO]: Reading File: tedarlog_status.sql
+01/07/2019 01:54:44 - [INFO]: Executing query
+01/07/2019 01:54:44 - [INFO]: Fetching records
+01/07/2019 01:54:45 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:54:45 - [INFO]: File generated with: 21 rows
+01/07/2019 01:54:45 - [INFO]: Reading File: tedarlog_ramarc_request.sql
+01/07/2019 01:54:45 - [INFO]: Executing query
+01/07/2019 01:54:45 - [INFO]: Fetching records
+01/07/2019 01:54:46 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:54:48 - [INFO]: File generated with: 87958 rows
+01/07/2019 01:54:49 - [INFO]: Reading File: tedarlog_type.sql
+01/07/2019 01:54:50 - [INFO]: Executing query
+01/07/2019 01:54:50 - [INFO]: Fetching records
+01/07/2019 01:54:51 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:54:51 - [INFO]: File generated with: 63 rows
+01/07/2019 01:54:51 - [INFO]: Reading File: tedarlog_priority.sql
+01/07/2019 01:54:52 - [INFO]: Executing query
+01/07/2019 01:54:52 - [INFO]: Fetching records
+01/07/2019 01:54:52 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:54:52 - [INFO]: File generated with: 6 rows
+01/07/2019 01:54:52 - [INFO]: Reading File: tedarlog_filter_assigned_to_name.sql
+01/07/2019 01:54:53 - [INFO]: Executing query
+01/07/2019 01:54:53 - [INFO]: Fetching records
+01/07/2019 01:54:54 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:54:54 - [INFO]: File generated with: 4100 rows
+01/07/2019 01:54:54 - [INFO]: Reading File: tedarlog_tald_user.sql
+01/07/2019 01:54:55 - [INFO]: Executing query
+01/07/2019 01:54:55 - [INFO]: Fetching records
+01/07/2019 01:54:56 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:54:56 - [INFO]: File generated with: 5216 rows
+01/07/2019 01:54:56 - [INFO]: Reading File: tedarlog_organization_structure.sql
+01/07/2019 01:54:57 - [INFO]: Executing query
+01/07/2019 01:54:57 - [INFO]: Fetching records
+01/07/2019 01:54:57 - [INFO]: Generating File to: C:\Users\nf945e\jobstarter\JobStarter\target\classes\output\
+01/07/2019 01:54:57 - [INFO]: File generated with: 5216 rows
+01/07/2019 01:54:57 - [INFO]: Disconnected from Database successfuly...
